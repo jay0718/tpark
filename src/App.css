@@ -1,38 +1,568 @@
-.App {
+
+
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --gray1: #E4E4E5;
+  --gray2: #BEBEBE;
+  --gray3: #949494;
+  --gray4: #7A7A7A;
+  --gray5: #545454;
+  --gray6: #3C3C3C;
+  --black: #000;
+  --white: #ffffff;
+}
+
+/* font size classes */
+
+.font-small {
+  font-size: 14px;
+}
+
+.font-medium {
+  font-size: 18px;
+}
+
+.font-large {
+  font-size: 24px;
+}
+
+.font-xlarge {
+  font-size: 32px;
+}
+
+/* font weight classes */
+
+.font-weight-light {
+  font-family: 'GmarketSansLight';
+  font-weight: 100;
+}
+
+.font-weight-medium {
+  font-family: 'GmarketSansMedium';
+  font-weight: 400;
+}
+
+.font-weight-bold {
+  font-family: 'GmarketSansBold';
+  font-weight: 700;
+}
+
+/* default styles */
+
+.body {
+  font-family: 'goorm-sans-normal', sans-serif;
+  margin: 10px;
+  padding: 0;
+}
+
+/* Header */
+
+.header {
+  overflow: hidden;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header a {
+  float: left;
+  color: var(--gray3);
   text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 25px;
+  border-radius: 4px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header a.logo {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 0;
+  color: var(--black);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header a:hover {
+  color: var(--black);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-right {
+  float: right;
+}
+
+/* Header Ends */
+
+/* Main Body */
+
+.main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+/* Container 1 and Container 2 */
+.referral-title, .exchange-offers {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.referral-title {
+  margin-bottom: 20px;
+}
+
+.referral-title-benefit {
+  display: flex;
+  justify-content: space-between;
+  margin: 7px auto;
+}
+
+.exchange-offers {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Make both containers stretch to maximum height */
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 300px;
+  gap: 20px; /* Add gap between the left and right containers */
+}
+
+.exchange-offers-left, .exchange-offers-right {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+
+.exchange-offers-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  text-align: center;
+  min-height: 300px; /* Make the left container take full height */
+}
+
+.exchange-offers-left > div {
+  flex: 1; /* Ensure the div takes up all available height */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  background-color: var(--gray1);
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.exchange-offers-left img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.exchange-offers-left > div span, 
+.exchange-offers-left > div strong {
+  display: block;
+  margin: 5px 0;
+}
+
+.exchange-offers-left strong {
+  font-size: 18px;
+}
+
+.exchange-offers-left button {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+
+.exchange-card-content strong:first-child, .exchange-card-content span:first-child {
+  margin-top: 5px; /* Add a small margin to give some space */
+}
+
+/* Keep other elements aligned */
+.exchange-offers-right a > div {
+  display: flex;
+  align-items: center;
+}
+
+.exchange-offers-right > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.exchange-offers-right > a:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+.exchange-offers-right strong {
+  font-size: 16px;
+  color: var(--black);
+}
+
+.exchange-offers-right span {
+  font-size: 14px;
+  color:  var(--gray3);
+  line-height: 1.5;
+}
+
+.exchange-offers-right span > strong {
+  font-size: 14px;
+  color:  var(--gray3);
+  line-height: 1.5;
+}
+
+.exchange-offers-right img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.exchange-offers-right a > div {
+  display: flex;
+  align-items: center;
+}
+
+.exchange-offers-right a:last-child {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.exchange-card-actions img {
+  width: 15px;
+  height: 15px;
+  padding-left: 5px;
+  border-radius: 5px;
+}
+
+
+.exchange-card-actions strong:first-child {
+  display: inline-block; /* Display "가입하기" by default */
+}
+
+.exchange-card-actions strong:nth-child(2) {
+  display: none; /* Hide "가입" by default */
+}
+
+.indicator-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+/* Container for the entire indicator */
+.indicator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8f9fa; /* Light background color */
+  border-radius: 10px;
+  border: 1px solid #dee2e6; /* Light border color */
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Inherit text color */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.indicator:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Left side of the indicator (main content) */
+.indicator-left {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main text */
+.indicator-text {
+  color: #495057; /* Dark gray color */
+  margin-bottom: 5px; /* Space between text and subtitle */
+}
+
+/* Subtitle text */
+.indicator-subtitle {
+  color: #212529; /* Darker color for emphasis */
+  font-size: 16px; /* Adjust font size */
+}
+
+/* Right side of the indicator (action text) */
+.indicator-right {
+  color: #007bff; /* Blue color for emphasis */
+  font-weight: bold; /* Bold for emphasis */
+  font-size: 14px; /* Slightly smaller font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for right side action text */
+.indicator-right:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Event Container */
+
+/* Container for all event cards */
+.events-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Default for desktop - 5 columns */
+  gap: 40px 20px;
+  padding: 20px 0;
+}
+
+/* Individual event card */
+.event-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Event image */
+.event-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Event details */
+.event-details {
+  padding: 15px;
+}
+
+.event-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #212529;
+}
+
+.event-mainText {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.event-description {
+  font-size: 12px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.event-entry-fee,
+.event-volume {
+  font-size: 12px;
+  color: #495057;
+}
+
+.events-title-description {
+  color: var(--gray4)
+}
+
+.event-card-link {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color */
+  display: block;
+}
+/* Event Card Ends */
+
+/* Contact */
+
+/* Container for the entire contact section */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* Each contact section (Telegram and Support) */
+.contact-section {
+  flex: 1;
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content */
+  align-items: flex-start; /* Aligns content to the start horizontally */
+  min-height: 210px; /* Sets a minimum height for both sections */
+}
+
+/* Specific styles for the Telegram section */
+.contact-telegram {
+  background-color: #000040; /* Dark background */
+}
+
+/* Specific styles for the Support section */
+.contact-support {
+  background-color: #d3dce6; /* Light background */
+  color: #1a1a2e; /* Dark text for contrast */
+}
+
+/* Titles in the contact sections */
+.contact-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-block-start: 10px;
+  margin-block-end: 3px;
+}
+
+/* Descriptions in the contact sections */
+.contact-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Buttons in the contact sections */
+.contact-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Specific styles for the Telegram button */
+.contact-telegram-button {
+  background-color: #000026; /* Light blue */
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Specific styles for the Support button */
+.contact-support-button {
+  background-color: var(--gray1); /* Darker background */
+  color: black;
+  font-size: 14px;
+}
+
+/* Footer */
+
+.footer{
+  text-align: center;
+  color: var(--gray4)
+}
+
+
+/* Main Body Ends */
+
+@media (max-width: 1028px) {
+  .events-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .exchange-card-actions strong:first-child {
+    display: none; /* Hide "가입하기" on small screens */
+  }
+
+  .exchange-card-actions strong:nth-child(2) {
+    display: inline-block; /* Show "가입" on small screens */
+  }
+
+  .exchange-offers {
+    flex-direction: column; /* Change direction to column */
+  }
+
+  .exchange-offers-left, .exchange-offers-right {
+    width: 100%; /* Make both sections take full width */
+  }
+
+  .exchange-offers-right strong {
+    font-size: 14px;
+    color: var(--black);
+  }
+  
+  .exchange-offers-right span {
+    font-size: 12px;
+    color:  var(--gray3);
+    line-height: 1.5;
+  }
+
+  .exchange-offers-right span > strong {
+    font-size: 12px;
+    color:  var(--gray3);
+    line-height: 1.5;
+  }
+
+  .events-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+  }
+
+  .contact-container {
+    flex-direction: column; /* Stack the boxes vertically */
+    gap: 0px;
+    padding: 0;
+  }
+
+  .contact-section {
+    margin-bottom: 20px; /* Add space between the stacked boxes */
+    min-height: 200px;
+  }
+
+  .contact-section:last-child {
+    margin-bottom: 0; /* Remove the margin from the last section */
   }
 }
