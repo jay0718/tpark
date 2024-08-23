@@ -2,7 +2,7 @@ import React from 'react';
 
 const eventsData = [
   {
-    imgSrc: "/bingx_competition.jpg",
+    imgSrc: "https://jay0718.github.io/tpark/bingx_competition.jpg",
     title: "빙엑스 8월 개인대회 (8.1~8.31)",
     mainText: "4만 달러 개인 대회",
     description: "PNL, ROI 1등 ~ 30등까지 차등 지급",
@@ -11,7 +11,7 @@ const eventsData = [
     link: "https://www.bitget.com/asia/events/competition/b1133b008fab54bc954e6b1c5182ba36",
   },
   {
-    imgSrc: "/bingx_competition.jpg",
+    imgSrc: "https://jay0718.github.io/tpark/bingx_competition.jpg",
     title: "바이비트 8월 개인대회 (8.1~8.31)",
     mainText: "5천 달러 개인 대회",
     description: "PNL, ROI 1등 ~ 10등까지 차등 지급",
@@ -20,7 +20,7 @@ const eventsData = [
     link: "https://www.bitget.com/asia/events/competition/b1133b008fab54bc954e6b1c5182ba36",
   },
   {
-    imgSrc: "/bingx_competition.jpg",
+    imgSrc: "https://jay0718.github.io/tpark/bingx_competition.jpg",
     title: "바이비트 8월 개인대회 (8.1~8.31)",
     mainText: "5천 달러 개인 대회",
     description: "PNL, ROI 1등 ~ 10등까지 차등 지급",
@@ -29,7 +29,7 @@ const eventsData = [
     link: "https://www.bitget.com/asia/events/competition/b1133b008fab54bc954e6b1c5182ba36",
   },
   {
-    imgSrc: "/bingx_competition.jpg",
+    imgSrc: "https://jay0718.github.io/tpark/bingx_competition.jpg",
     title: "바이비트 8월 개인대회 (8.1~8.31)",
     mainText: "5천 달러 개인 대회",
     description: "PNL, ROI 1등 ~ 10등까지 차등 지급",
@@ -38,7 +38,7 @@ const eventsData = [
     link: "https://www.bitget.com/asia/events/competition/b1133b008fab54bc954e6b1c5182ba36",
   },
   {
-    imgSrc: "/bingx_competition.jpg",
+    imgSrc: "https://jay0718.github.io/tpark/bingx_competition.jpg",
     title: "바이비트 8월 개인대회 (8.1~8.31)",
     mainText: "5천 달러 개인 대회",
     description: "PNL, ROI 1등 ~ 10등까지 차등 지급",
@@ -47,7 +47,7 @@ const eventsData = [
     link: "https://www.bitget.com/asia/events/competition/b1133b008fab54bc954e6b1c5182ba36",
   },
   {
-    imgSrc: "/bingx_competition.jpg",
+    imgSrc: "https://jay0718.github.io/tpark/bingx_competition.jpg",
     title: "바이비트 8월 개인대회 (8.1~8.31)",
     mainText: "5천 달러 개인 대회",
     description: "PNL, ROI 1등 ~ 10등까지 차등 지급",
@@ -56,7 +56,7 @@ const eventsData = [
     link: "https://www.bitget.com/asia/events/competition/b1133b008fab54bc954e6b1c5182ba36",
   },
   {
-    imgSrc: "/bingx_competition.jpg",
+    imgSrc: "https://jay0718.github.io/tpark/bingx_competition.jpg",
     title: "바이비트 8월 개인대회 (8.1~8.31)",
     mainText: "5천 달러 개인 대회",
     description: "PNL, ROI 1등 ~ 10등까지 차등 지급",
