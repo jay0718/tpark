@@ -2,6 +2,7 @@
 .landing-container {
     text-align: center;
     padding: 40px 0;
+    margin-bottom: 20px;
     padding-top: 0;
     background-color: #f8f9fa;
     width: 100%;
@@ -90,6 +91,10 @@
   }
   
   @media (max-width: 768px) {
+    .landing-container {
+      padding: 0;
+    }
+
     .landing-steps {
       flex-direction: column;
     }
