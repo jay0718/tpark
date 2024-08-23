@@ -4,16 +4,6 @@ import ExchangeCard from './ExchangeCard';
 function ExchangeOffers() {
   return (
     <div className="exchange-offers font-weight-medium">
-      <div className="exchange-offers-left">
-        <div>
-        <img src="https://jay0718.github.io/tpark/coin.png" alt="description" />
-          <div>
-            <span className="font-weight-medium">이미 거래소에 가입한 계정이 있어도</span>
-            <strong className="font-weight-bold">레퍼럴을 새로 설정할 수 있어요!</strong>
-          </div>
-        </div>
-        <button className="font-weight-bold">레퍼럴 변경법 확인하기</button>
-      </div>
       <div className="exchange-offers-right">
         <ExchangeCard
           img="https://jay0718.github.io/tpark/bingx_logo.jpg"
@@ -47,6 +37,15 @@ function ExchangeOffers() {
           marketOrderFee="0.04"
           link="https://www.okx.com"
         />
+      </div>
+      <div className="exchange-offers-left">
+        <div>
+          <div>
+            <span className="font-weight-medium">이미 다른 레퍼럴을 사용중이신가요?</span>
+            <strong className="font-weight-bold">레퍼럴을 새로 설정할 수 있어요!</strong>
+          </div>
+        </div>
+        <button className="font-weight-bold">레퍼럴 변경법 확인하기</button>
       </div>
     </div>
   );

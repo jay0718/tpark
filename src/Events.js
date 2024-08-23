@@ -1,4 +1,5 @@
 import React from 'react';
+import Calendar from './Calendar';
 
 const eventsData = [
   {
@@ -70,8 +71,11 @@ function Events() {
   return (
     <div className="events-outer-container">
       <div className="events-title">
-        <div className="events-title-description font-weight-medium">Tpark과 제휴 거래소와 함께하는</div>
-        <div className="events-title-text font-weight-bold">이벤트 참여하고 상금 받아가세요!</div>
+        <div className="events-title-text font-weight-bold">진행중인 이벤트 확인하기</div>
+        <Calendar/>
+      </div>
+      <div className="events-title">
+        <div className="events-title-text font-weight-bold">과거 진행했던 이벤트 확인하기</div>
       </div>
       <div className="events-container">
         {eventsData.map((event, index) => (

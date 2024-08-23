@@ -132,12 +132,13 @@
 }
 
 /* Container 1 and Container 2 */
-.referral-title, .exchange-offers {
+.referral-title-container, .referral-title, .exchange-offers {
   width: 100%;
   max-width: 1200px;
 }
 
 .referral-title {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -151,14 +152,14 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch; /* Make both containers stretch to maximum height */
-  padding: 20px;
+  padding: 20px 0;
   border-radius: 10px;
   min-height: 300px;
   gap: 20px; /* Add gap between the left and right containers */
+  flex-direction: column;
 }
 
 .exchange-offers-left, .exchange-offers-right {
-  width: 49%;
   display: flex;
   flex-direction: column;
 }
@@ -169,7 +170,7 @@
   justify-content: space-between;
   border-radius: 10px;
   text-align: center;
-  min-height: 300px; /* Make the left container take full height */
+  min-height: 200px; /* Make the left container take full height */
 }
 
 .exchange-offers-left > div {
@@ -431,6 +432,7 @@
   justify-content: space-between;
   gap: 20px;
   padding: 20px 0;
+  width: 100%;
 }
 
 /* Each contact section (Telegram and Support) */
@@ -509,11 +511,16 @@
 @media (max-width: 1028px) {
   .events-container {
     grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+    gap: 20px 20px;
   }
 }
 
 /* Tablet */
 @media (max-width: 768px) {
+  .events-title {
+    margin-top: 20px;
+  }
+
   .exchange-card-actions strong:first-child {
     display: none; /* Hide "가입하기" on small screens */
   }
@@ -524,6 +531,7 @@
 
   .exchange-offers {
     flex-direction: column; /* Change direction to column */
+    padding: 5px 0;
   }
 
   .exchange-offers-left, .exchange-offers-right {
@@ -565,4 +573,14 @@
   .contact-section:last-child {
     margin-bottom: 0; /* Remove the margin from the last section */
   }
+
+  .main-container {
+    margin-top: 10px; /* Add space between the header and content */
+  }
+
+  .referral-title {
+    margin-bottom: 0;
+  }
+
+
 }
