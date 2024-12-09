@@ -28,11 +28,13 @@ function Landing({ onFindExchangeClick }) {
           <h3 className="step-title">Tpark 커뮤니티 가입하기</h3>
           <p className="step-description">
             거래소 가입을 완료하셨다면<br/>
-            아래 버튼을 통해 텔레그램에 입장해주세요.
+            아래 버튼을 통해 디스코드에 입장해주세요.
           </p>
           <div className="step-image">
           </div>
-          <button className="step-button">텔레그램 입장하기</button>
+          <a href="https://discord.com/invite/Jkgc3jXE3A" target="_blank" rel="noopener noreferrer">
+            <button className="step-button">디스코드 입장하기</button>
+          </a>
         </div>
         <div className="landing-arrow">
           <img src="https://www.svgrepo.com/show/27797/right-arrow.svg" alt="Arrow" />
@@ -46,7 +48,10 @@ function Landing({ onFindExchangeClick }) {
           </p>
           <div className="step-image">
           </div>
-          <button className="step-button">Tpark 유튜브 바로가기</button>
+          <a href="https://www.youtube.com/@tparkcrypto/" target="_blank" rel="noopener noreferrer">
+            <button className="step-button">Tpark 유튜브 바로가기</button>
+          </a>
+
         </div>
       </div>
     </div>

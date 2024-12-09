@@ -4,18 +4,18 @@ import './EventCalendar.css'; // Ensure you create this CSS file for styling
 const eventCalendarData = [
   {
     status: "OPEN",
-    dateRange: "07.31(오전 11시) ~ 08.30(오전 11시)",
-    title: "빙엑스 대회",
+    dateRange: "11.19 ~ 12.20",
+    title: "비트겟 개인 대회",
   },
   {
     status: "OPEN",
-    dateRange: "07.31(오후 12시) ~ 08.30(오후 12시)",
-    title: "비트겟 대회",
+    dateRange: "11.27 ~ 12.27",
+    title: "비트겟 팀 대회",
   },
   {
     status: "OPEN",
-    dateRange: "08.08(오전 8시) ~ 09.08(오전 8시)",
-    title: "게이트아이오 대회",
+    dateRange: "12.06 ~ 12.22",
+    title: "OKX 개인 대회",
   },
 ];
 

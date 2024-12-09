@@ -9,9 +9,9 @@ function Header() {
         </div>
         <div className="header-right">
           <a className="active" href="#">홈</a>
-          <a href="#">레퍼럴</a>
-          <a href="#">텔레그램</a>
-          <a href="#">문의하기</a>
+          <a href="https://litt.ly/tpark">레퍼럴</a>
+          <a href="https://discord.com/invite/Jkgc3jXE3A">디스코드</a>
+          <a href="https://discord.com/invite/Jkgc3jXE3A">문의하기</a>
         </div>
       </div>
     </header>
